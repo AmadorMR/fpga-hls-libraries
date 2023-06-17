@@ -79,37 +79,43 @@ void ImgEnhance(vision::Img<PIXEL_T, H, W, STORAGE, NPPC> &InImg,
     ChannelSumT r_absdiff = ChannelSumT(0);
     ChannelSumT g_absdiff = ChannelSumT(0);
     ChannelSumT b_absdiff = ChannelSumT(0);
+
+    ChannelT r_out, g_out, b_out;
+
     /* <= NEW */
     #pragma HLS loop pipeline
     for (unsigned ImgIdx = 0; ImgIdx < FrameSize; ImgIdx++) {
         PixelT InPixelWord = InImg.read(ImgIdx);
         PixelT TmpPixelWord;
+        for (int k = 0; k < NPPC; k++){
+            // For a NPPC of 4 the pixel is the shape of
+            // R-G-B / R-G-B / R-G-B / R-G-B 
+            ChannelT r = InPixelWord.byte(3*k,ChannelWidth),
+                     g = InPixelWord.byte(3*k+1,ChannelWidth),
+                     b = InPixelWord.byte(3*k+2,ChannelWidth);
+            ChannelT    r_fixpt = r,
+                        g_fixpt = g,
+                        b_fixpt = b,
+                        r_const_fixpt = r_const,
+                        g_const_fixpt = g_const,
+                        b_const_fixpt = b_const,
+                        common_const_fixpt = common_const;
+            /* ChannelT  */
+                    r_out = common_const_fixpt + r_const_fixpt*r_fixpt;
+                    g_out = common_const_fixpt + g_const_fixpt*g_fixpt;
+                    b_out = common_const_fixpt + b_const_fixpt*b_fixpt;
 
-        ChannelT r = InPixelWord.byte(0,ChannelWidth),
-                 g = InPixelWord.byte(1,ChannelWidth),
-                 b = InPixelWord.byte(2,ChannelWidth);
-        ChannelT    r_fixpt = r,
-                    g_fixpt = g,
-                    b_fixpt = b,
-                    r_const_fixpt = r_const,
-                    g_const_fixpt = g_const,
-                    b_const_fixpt = b_const,
-                    common_const_fixpt = common_const;
-        ChannelT r_out = common_const_fixpt + r_const_fixpt*r_fixpt,
-                 g_out = common_const_fixpt + g_const_fixpt*g_fixpt,
-                 b_out = common_const_fixpt + b_const_fixpt*b_fixpt;
+            /* 255 Value for 8 bits channel*/
+            const ChannelT MaxChannelVal = ChannelT(255);
 
-        /* 255 Value for 8 bits channel*/
-        const ChannelT MaxChannelVal = ChannelT(255);
-
-        r_out = (r_out > MaxChannelVal) ? MaxChannelVal : r_out;
-        g_out = (g_out > MaxChannelVal) ? MaxChannelVal : g_out;
-        b_out = (b_out > MaxChannelVal) ? MaxChannelVal : b_out;
-        
-        TmpPixelWord.byte(0,ChannelWidth) = r_out;
-        TmpPixelWord.byte(1,ChannelWidth) = g_out;
-        TmpPixelWord.byte(2,ChannelWidth) = b_out;
-
+            r_out = (r_out > MaxChannelVal) ? MaxChannelVal : r_out;
+            g_out = (g_out > MaxChannelVal) ? MaxChannelVal : g_out;
+            b_out = (b_out > MaxChannelVal) ? MaxChannelVal : b_out;
+            
+            TmpPixelWord.byte(3*k,ChannelWidth) = r_out;
+            TmpPixelWord.byte(3*k+1,ChannelWidth) = g_out;
+            TmpPixelWord.byte(3*k+2,ChannelWidth) = b_out;
+        }
         OutImg.write(TmpPixelWord,ImgIdx);
 
         /*NEW =>*/
