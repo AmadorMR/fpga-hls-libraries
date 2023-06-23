@@ -1,0 +1,67 @@
+NAME = hls
+ LOCAL_CONFIG = -legup-config=config.tcl
+ NO_INLINE = 
+ VHDL_WRAPPER_SIM = 
+ SYNTHESIS_TOP_MODULE = 
+ POST_SYNTH_SIM = 
+ PROGRAMMER_ID = 
+ BOARD_IP = 
+ QOR_TEST_NAME = hls
+ COMMIT_HASH = 
+ QOR_BUILD = 
+ QOR_BUILD_NAME = 
+ NO_OPT = 
+ MODELSIM_TOOL_PATH = 
+ MODELSIM_TOOL_PATH_OS_INDEP = 
+ LIBERO_TOOL_PATH = 
+ LIBERO_TOOL_PATH_OS_INDEP = 
+ SYNPLIFY_PATH = /cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/Designer/bin/../../SynplifyPro/bin/
+ MEMORY_BASE_ADDRESSMEMORY_SIZE = 
+ MEMORY_WIDTH = 
+ MEMORY_SIM_INIT_FILE_NAME = 
+ DATA_MEMORY_BASE_ADDRESS = 
+ COMBINE_BB = 
+ OUTPUT_PATH = hls_output
+ CUSTOM_RTL_FUNCTIONS = n
+ FPGA_BOARD = MPF300
+ DEVICE_FAMILY = PolarFire
+ DEVICE = MPF300TS-1FCG1152I
+ PROJECT = hw_only
+ FPGA_VENDOR = MICROSEMI
+ OPENMP = 
+ SYSTEM_UART_TYPE = 
+ CLOCK_PERIOD = 10
+ SYNTHESIS_CLOCK_PERIOD = 10
+ LEGUP_DEFAULT_FIFO_DEPTH = 2
+ PROC_ARCH = 
+ LEGUP_CUSTOM_VHDL_FILES = 
+ USE_TOP_LEVEL_WRAPPER_FILE = 0
+ TARGET_ARCH = 
+ SOURCE_TRANSFORM = 1
+ REPLICATE_RAMS = 
+ USE_ACTGENO = 0
+ CUSTOM_TOP_LEVEL = 
+ SRCS = pf_demo.cpp
+ RISCV_SRCS = pf_demo.cpp
+ CFLAG = -D__SYNTHESIS__ -m32 -I /usr/include/i386-linux-gnu -D LEGUP_DEFAULT_FIFO_DEPTH=2 -O3 -fno-builtin -I D:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/examples/lib/include/ -I D:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/smarthls-library/
+ CPP_FLAG = -std=c++11 -std=gnu++11
+ USER_CXX_FLAG = -ID:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/precompiled_sw_libraries/opencv4.5.4-x86_64-cygwin/include/opencv4
+ NO_STD_COMPILE_OPTS = 
+ USER_CXX_FLAG_RISCV = -ID:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/precompiled_sw_libraries/opencv4.5.4-x86_64-cygwin/include/opencv4
+ USER_LINK_FLAG = -LD:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/precompiled_sw_libraries/opencv4.5.4-x86_64-cygwin/lib -lopencv_core -lopencv_imgcodecs -lopencv_imgproc
+ USER_LINK_FLAG_RISCV = -LD:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/precompiled_sw_libraries/opencv4.5.4-x86_64-cygwin/lib -lopencv_core -lopencv_imgcodecs -lopencv_imgproc
+ LINK_ICICLE_LIBS = -L/cygdrive/D/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/smarthls-library/hls -lhls_riscv64_no_accel
+ LINK_ICICLE_LIBS_SOC = -L/cygdrive/D/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/smarthls-library/hls -lhls_riscv64_accel
+ LINK_FLAG_RISCV = 
+ PROGRAM_ARGUMENTS = 
+ UNROLL = 
+ USER_ENV_VARS = PATH=D:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/precompiled_sw_libraries/opencv4.5.4-x86_64-cygwin/bin\;/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/gcc/bin:/usr/bin:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/lib/qt-4.8.7:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/lib/graphviz-2.26.3:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/smarthls-library/hls:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/lib:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/lib/coinlp:/cygdrive/d/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit_img_enhancer/hls:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/python:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/python/Scripts:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/ModelSimPro/win32acoem/bin:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/bin:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/Designer/bin:/usr/local/bin:/usr/bin:/cygdrive/d/Programas/Microchip/Libero_IDE/Libero_v9.2/Model/win32acoem:/cygdrive/d/Programas/Microchip/Libero_IDE/Libero_v9.2/Designer/bin:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/d/Nueva carpeta/Nueva carpeta/bin:/cygdrive/d/Programas/Calibre:/cygdrive/d/Programas/Matlab2022/bin:/cygdrive/c/Program Files/Mullvad VPN/resources:/cygdrive/d/Programas/Git/cmd:/cygdrive/c/Users/amado/AppData/Local/Microsoft/WindowsApps:/cygdrive/d/Programas/Microsoft VS Code/bin:/usr/lib/lapack
+ USER_ENV_VARS_RISCV = PATH=D:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/precompiled_sw_libraries/opencv4.5.4-x86_64-cygwin/bin\;/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/gcc/bin:/usr/bin:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/lib/qt-4.8.7:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/lib/graphviz-2.26.3:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/smarthls-library/hls:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/lib:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/lib/coinlp:/cygdrive/d/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit_img_enhancer/hls:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/python:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/dependencies/python/Scripts:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/ModelSimPro/win32acoem/bin:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/bin:/cygdrive/d/Programas/Microchip/Libero_SoC_2023.1/Designer/bin:/usr/local/bin:/usr/bin:/cygdrive/d/Programas/Microchip/Libero_IDE/Libero_v9.2/Model/win32acoem:/cygdrive/d/Programas/Microchip/Libero_IDE/Libero_v9.2/Designer/bin:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/d/Nueva carpeta/Nueva carpeta/bin:/cygdrive/d/Programas/Calibre:/cygdrive/d/Programas/Matlab2022/bin:/cygdrive/c/Program Files/Mullvad VPN/resources:/cygdrive/d/Programas/Git/cmd:/cygdrive/c/Users/amado/AppData/Local/Microsoft/WindowsApps:/cygdrive/d/Programas/Microsoft VS Code/bin:/usr/lib/lapack
+ LLC_FLAGS = -legup-config=/cygdrive/D/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/examples/legup.tcl -legup-config=config.tcl -PURE_HW_FLOW= -LEGUP_ACCELERATOR_FILENAME=hls
+ OPT_O3_FLAGS = -legup-config=/cygdrive/D/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/examples/legup.tcl -legup-config=config.tcl -vectorizer-min-trip-count=1000000 -slp-threshold=1000000 -force-vector-width=1 -simplifycfg-disable-switchtolookup -instcombine-disable-foldphiload -instcombine-disable-sign-ext-opt -after-clang=0 -PURE_HW_FLOW= -before-removing-tb=1 -O3 -inline-threshold=-9999
+ OPT_FLAGS = -legup-config=/cygdrive/D/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/examples/legup.tcl -legup-config=config.tcl -vectorizer-min-trip-count=1000000 -slp-threshold=1000000 -force-vector-width=1 -simplifycfg-disable-switchtolookup -instcombine-disable-foldphiload -instcombine-disable-sign-ext-opt -after-clang=1 -PURE_HW_FLOW=
+ NUM_LIBERO_PnR_PASSES = 25
+ BOARD_PATH = 
+ INPUT_FILES_RISCV = 
+ OUTPUT_FILES_RISCV = 
+

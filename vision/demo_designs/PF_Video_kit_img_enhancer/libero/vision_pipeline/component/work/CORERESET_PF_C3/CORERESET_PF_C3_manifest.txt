@@ -1,0 +1,15 @@
+Microchip Technology Inc. - Microchip Libero Software Release v2023.1 (Version 2023.1.0.6)
+
+Date      :  Fri Jun 16 13:52:06 2023
+Project   :  D:\Programas\Microchip\fpga-hls-libraries\vision\demo_designs\PF_Video_kit\libero\vision_pipeline
+Component :  CORERESET_PF_C3
+Family    :  PolarFire
+
+
+HDL source files for all Synthesis and Simulation tools:
+    D:/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit/libero/vision_pipeline/component/work/CORERESET_PF_C3/CORERESET_PF_C3_0/core/corereset_pf.v
+    D:/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit/libero/vision_pipeline/component/work/CORERESET_PF_C3/CORERESET_PF_C3.v
+
+Stimulus files for all Simulation tools:
+    D:/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit/libero/vision_pipeline/component/work/CORERESET_PF_C3/CORERESET_PF_C3_0/test/corereset_pf_tb.v
+

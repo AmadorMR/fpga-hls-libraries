@@ -1,0 +1,44 @@
+[1m[33m> 'Compile Software' step has not yet run.[39m[0m
+  Enter 'Y' (yes) to run the following step(s) automatically before continuing to 'Run Software'.
+
+  - Compile Software
+
+Y - yes (default)
+c - cancel
+[Y/c]:
+Info: Running the following targets: sw_compile sw
+Info: Compiling Software...
+pf_demo.cpp: En la función ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’:
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 4 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+ void VideoPipelineTop(BayerAxisVideoT &VideoIn, RgbAxisVideoT &VideoOut,
+      ^
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 5 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 6 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 7 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 8 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 9 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 10 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 11 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 12 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 13 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+Error: Error! Command failed!
+Command: 'g++'
+Args: '['-ID:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/precompiled_sw_libraries/opencv4.5.4-x86_64-cygwin/include/opencv4', '-O1', '-g', '-pg', '-std=c++11', '-std=gnu++11', 'pf_demo.cpp', '-Wno-attributes', '-Wno-unknown-pragmas', '-ID:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/smarthls-library', '-LD:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/smarthls-library/hls', '-lhls_x86', '-LD:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/precompiled_sw_libraries/opencv4.5.4-x86_64-cygwin/lib', '-lopencv_core', '-lopencv_imgcodecs', '-lopencv_imgproc', '-o', 'hls_output/.hls/hls.sw_binary', '-fopenmp', '-pthread', '-lm', '-lrt']'
+Shell Command: g++ -ID:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/precompiled_sw_libraries/opencv4.5.4-x86_64-cygwin/include/opencv4 -O1 -g -pg -std=c++11 -std=gnu++11 pf_demo.cpp -Wno-attributes -Wno-unknown-pragmas -ID:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/smarthls-library -LD:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/smarthls-library/hls -lhls_x86 -LD:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/precompiled_sw_libraries/opencv4.5.4-x86_64-cygwin/lib -lopencv_core -lopencv_imgcodecs -lopencv_imgproc -o hls_output/.hls/hls.sw_binary -fopenmp -pthread -lm -lrt
+CWD: 'None'
+Return Code: 1
+Output: 'pf_demo.cpp: En la función ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’:
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 4 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+ void VideoPipelineTop(BayerAxisVideoT &VideoIn, RgbAxisVideoT &VideoOut,
+      ^
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 5 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 6 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 7 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 8 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 9 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 10 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 11 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 12 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+pf_demo.cpp:50:6: error: falta el argumento por defecto para el parámetro 13 de ‘void VideoPipelineTop(BayerAxisVideoT&, RgbAxisVideoT&, hls::ap_uint<2u>, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’
+'
+

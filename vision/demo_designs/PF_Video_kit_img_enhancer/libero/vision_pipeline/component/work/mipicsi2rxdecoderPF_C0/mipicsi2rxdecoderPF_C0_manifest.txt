@@ -1,0 +1,17 @@
+Microchip Technology Inc. - Microchip Libero Software Release v2023.1 (Version 2023.1.0.6)
+
+Date      :  Fri Jun 16 13:52:11 2023
+Project   :  D:\Programas\Microchip\fpga-hls-libraries\vision\demo_designs\PF_Video_kit\libero\vision_pipeline
+Component :  mipicsi2rxdecoderPF_C0
+Family    :  PolarFire
+
+
+HDL source files for all Synthesis and Simulation tools:
+    D:/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit/libero/vision_pipeline/component/Microsemi/SolutionCore/mipicsi2rxdecoderPF/2.2.5/Obfuscated/byte2pixel_conversion.v
+    D:/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit/libero/vision_pipeline/component/Microsemi/SolutionCore/mipicsi2rxdecoderPF/2.2.5/Obfuscated/cdcfifo.v
+    D:/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit/libero/vision_pipeline/component/Microsemi/SolutionCore/mipicsi2rxdecoderPF/2.2.5/Obfuscated/cdcfiforam.v
+    D:/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit/libero/vision_pipeline/component/Microsemi/SolutionCore/mipicsi2rxdecoderPF/2.2.5/Obfuscated/embsync_detect.v
+    D:/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit/libero/vision_pipeline/component/Microsemi/SolutionCore/mipicsi2rxdecoderPF/2.2.5/Obfuscated/mipicsi2rxdecoderPF.v
+    D:/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit/libero/vision_pipeline/component/Microsemi/SolutionCore/mipicsi2rxdecoderPF/2.2.5/Obfuscated/mipi_csi2_rxdecoder.v
+    D:/Programas/Microchip/fpga-hls-libraries/vision/demo_designs/PF_Video_kit/libero/vision_pipeline/component/work/mipicsi2rxdecoderPF_C0/mipicsi2rxdecoderPF_C0.v
+

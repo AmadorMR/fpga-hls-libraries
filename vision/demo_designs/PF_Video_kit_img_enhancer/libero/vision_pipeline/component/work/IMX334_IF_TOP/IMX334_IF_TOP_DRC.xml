@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>IMX334_IF_TOP</header>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin Camera_To_AXIS_Converter_0:o_frames_skipped[15:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/IMX334_IF_TOP/pins/Camera_To_AXIS_Converter_0:o_frames_skipped</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin Camera_To_AXIS_Converter_0:o_pushback_detected</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/IMX334_IF_TOP/pins/Camera_To_AXIS_Converter_0:o_pushback_detected</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin CSI2_RXDecoder_0:data_out_o[39:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/IMX334_IF_TOP/pins/CSI2_RXDecoder_0:data_out_o</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin CSI2_RXDecoder_0:frame_start_o</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/IMX334_IF_TOP/pins/CSI2_RXDecoder_0:frame_start_o</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin CSI2_RXDecoder_0:frame_valid_o</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/IMX334_IF_TOP/pins/CSI2_RXDecoder_0:frame_valid_o</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin CSI2_RXDecoder_1:data_out_o[39:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/IMX334_IF_TOP/pins/CSI2_RXDecoder_1:data_out_o</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin CSI2_RXDecoder_1:frame_valid_o</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/IMX334_IF_TOP/pins/CSI2_RXDecoder_1:frame_valid_o</crossprobe>
+  </drc>
+</drcreport>

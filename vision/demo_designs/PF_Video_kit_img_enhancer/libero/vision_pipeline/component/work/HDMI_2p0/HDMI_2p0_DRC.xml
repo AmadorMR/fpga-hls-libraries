@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>HDMI_2p0</header>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin PF_XCVR_ERM_C0_0:LANE0_TX_CLK_STABLE</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/HDMI_2p0/pins/PF_XCVR_ERM_C0_0:LANE0_TX_CLK_STABLE</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin PF_XCVR_ERM_C0_0:LANE1_RX_DATA[9:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/HDMI_2p0/pins/PF_XCVR_ERM_C0_0:LANE1_RX_DATA</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin PF_XCVR_ERM_C0_0:LANE1_RX_CLK_R</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/HDMI_2p0/pins/PF_XCVR_ERM_C0_0:LANE1_RX_CLK_R</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin PF_XCVR_ERM_C0_0:LANE1_RX_VAL</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/HDMI_2p0/pins/PF_XCVR_ERM_C0_0:LANE1_RX_VAL</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin PF_XCVR_ERM_C0_0:LANE2_RX_DATA[9:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/HDMI_2p0/pins/PF_XCVR_ERM_C0_0:LANE2_RX_DATA</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin PF_XCVR_ERM_C0_0:LANE2_RX_CLK_R</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/HDMI_2p0/pins/PF_XCVR_ERM_C0_0:LANE2_RX_CLK_R</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin PF_XCVR_ERM_C0_0:LANE2_RX_VAL</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/HDMI_2p0/pins/PF_XCVR_ERM_C0_0:LANE2_RX_VAL</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin PF_XCVR_ERM_C0_0:LANE3_RX_DATA[9:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/HDMI_2p0/pins/PF_XCVR_ERM_C0_0:LANE3_RX_DATA</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin PF_XCVR_ERM_C0_0:LANE3_RX_CLK_R</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/HDMI_2p0/pins/PF_XCVR_ERM_C0_0:LANE3_RX_CLK_R</crossprobe>
+  </drc>
+  <drc>
+    <status>D:\Programas\Microchip\Libero_SoC_2023.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin PF_XCVR_ERM_C0_0:LANE3_RX_VAL</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/HDMI_2p0/pins/PF_XCVR_ERM_C0_0:LANE3_RX_VAL</crossprobe>
+  </drc>
+</drcreport>

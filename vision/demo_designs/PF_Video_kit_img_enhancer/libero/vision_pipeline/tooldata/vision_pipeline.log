@@ -1,0 +1,16 @@
+Project Name: vision_pipeline
+Location: D:\Programas\Microchip\fpga-hls-libraries\vision\demo_designs\PF_Video_kit\libero\vision_pipeline
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : MPF300TS-1FCG1152I
+Family         : PolarFire
+Die            : MPF300TS
+Package        : FCG1152
+Speed          : -1
+Core Voltage   : 1.0
+Range          : IND
