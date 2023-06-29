@@ -41,8 +41,8 @@ NAME = hls
  REPLICATE_RAMS = 
  USE_ACTGENO = 0
  CUSTOM_TOP_LEVEL = 
- SRCS = pf_demo.cpp
- RISCV_SRCS = pf_demo.cpp
+ SRCS = pf_demo_img_enhance.cpp
+ RISCV_SRCS = pf_demo_img_enhance.cpp
  CFLAG = -D__SYNTHESIS__ -m32 -I /usr/include/i386-linux-gnu -D LEGUP_DEFAULT_FIFO_DEPTH=2 -O3 -fno-builtin -I D:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/examples/lib/include/ -I D:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/smarthls-library/
  CPP_FLAG = -std=c++11 -std=gnu++11
  USER_CXX_FLAG = -ID:/Programas/Microchip/Libero_SoC_2023.1/SmartHLS-2023.1/SmartHLS/precompiled_sw_libraries/opencv4.5.4-x86_64-cygwin/include/opencv4

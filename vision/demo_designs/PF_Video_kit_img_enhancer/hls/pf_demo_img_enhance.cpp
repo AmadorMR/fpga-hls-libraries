@@ -91,9 +91,23 @@ int main() {
     // Output from
     RgbAxisVideoT OutputStream(NumPixelWords);
     // Call the three top-level funtions.
+
+    unsigned hls_c_c = 1;
+
+    unsigned hls_r_c = 3;
+    unsigned hls_g_c = 1;
+    unsigned hls_b_c = 1;
+    unsigned r_mean;
+    unsigned g_mean;
+    unsigned b_mean;
+    unsigned r_var;
+    unsigned g_var;
+    unsigned b_var;
+
     DDR_Write_wrapper(InputStream, Buf, WIDTH, HEIGHT);
     DDR_Read_wrapper(Buf, DDRReadFIFO, WIDTH, HEIGHT);
-    VideoPipelineTop(DDRReadFIFO, OutputStream, 0);
+    VideoPipelineTop(DDRReadFIFO, OutputStream, 0, hls_c_c, hls_r_c, hls_g_c, hls_b_c,
+                    r_mean, g_mean, b_mean, r_var, g_var, b_var);
 
     // Step 3: verify the output data by comparing against an expected image.
 

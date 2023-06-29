@@ -1,4 +1,4 @@
-SRCS=pf_demo.cpp
+SRCS=pf_demo_img_enhance.cpp
 LOCAL_CONFIG = -legup-config=config.tcl
 LEVEL = $(LEGUP_ROOT_DIR)/examples
 
