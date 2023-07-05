@@ -18,4 +18,6 @@
 #include "./interface/axi_mm_intf.hpp"
 #include "./interface/axis_video.hpp"
 
+#include "./imgproc/img_enhancer.hpp"
+
 #endif
