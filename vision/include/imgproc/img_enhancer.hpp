@@ -32,7 +32,6 @@ namespace vision {
 Image Enhancer: adjust brightness, contrast and color balance of input video feed. 
 */
 /*TODO:
- - Add support for various NPPC
  - Check validity of Constants beign unsigned
   */
 
@@ -67,15 +66,6 @@ void ImgEnhance(vision::Img<PIXEL_T, H, W, STORAGE, NPPC> &InImg,
     ChannelSumT r_sum = ChannelSumT(0);
     ChannelSumT g_sum = ChannelSumT(0);
     ChannelSumT b_sum = ChannelSumT(0);
-/* 
-    ChannelSumT r_mean;
-    ChannelSumT g_mean;
-    ChannelSumT b_mean;
-
-    ChannelSumT r_var;
-    ChannelSumT g_var;
-    ChannelSumT b_var;  */
-
     ChannelSumT r_absdiff = ChannelSumT(0);
     ChannelSumT g_absdiff = ChannelSumT(0);
     ChannelSumT b_absdiff = ChannelSumT(0);
@@ -101,9 +91,9 @@ void ImgEnhance(vision::Img<PIXEL_T, H, W, STORAGE, NPPC> &InImg,
                         b_const_fixpt = b_const,
                         common_const_fixpt = common_const;
             /* ChannelT  */
-                    r_out = common_const_fixpt + r_const_fixpt*r_fixpt;
-                    g_out = common_const_fixpt + g_const_fixpt*g_fixpt;
-                    b_out = common_const_fixpt + b_const_fixpt*b_fixpt;
+                    r_out = ((common_const_fixpt + r_const_fixpt)*r_fixpt) >> 7;
+                    g_out = ((common_const_fixpt + g_const_fixpt)*g_fixpt) >> 7;
+                    b_out = ((common_const_fixpt + b_const_fixpt)*b_fixpt) >> 7;
 
             /* 255 Value for 8 bits channel*/
             const ChannelT MaxChannelVal = ChannelT(255);
@@ -160,13 +150,13 @@ void ImgEnhance(vision::Img<PIXEL_T, H, W, STORAGE, NPPC> &InImg,
     std::cout << "g_sum_Final = " << g_sum.to_string(10) << std::endl;
     std::cout << "b_sum_Final = " << b_sum.to_string(10) << std::endl; */
 
-/*     std::cout << "r_mean = " << r_mean.to_string(10) << std::endl;
-    std::cout << "g_mean = " << g_mean.to_string(10) << std::endl;
-    std::cout << "b_mean = " << b_mean.to_string(10) << std::endl;
+    /*std::cout << "r_mean = " << r_mean << std::endl;
+    std::cout << "g_mean = " << g_mean << std::endl;
+    std::cout << "b_mean = " << b_mean << std::endl;
 
-    std::cout << "r_var = " << r_var.to_string(10) << std::endl;
-    std::cout << "g_var = " << g_var.to_string(10) << std::endl;
-    std::cout << "b_var = " << b_var.to_string(10) << std::endl; */
+    std::cout << "r_var = " << r_var << std::endl;
+    std::cout << "g_var = " << g_var << std::endl;
+    std::cout << "b_var = " << b_var << std::endl; */
 
 
 }

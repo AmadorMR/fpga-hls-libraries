@@ -73,23 +73,22 @@ int main() {
         the OpenCV funct has a form of: beta + alpha*f(i,j) 
         really similar to our ImgEnhance but only capable of 
         modifying all three RGB at the same time */
-    unsigned alpha = 2;
+    unsigned alpha = 1;
     unsigned beta = 0;
 
-    unsigned hls_c_c = 1;
+    unsigned hls_c_c = 0;
 
-    unsigned hls_r_c = 3;
-    unsigned hls_g_c = 1;
-    unsigned hls_b_c = 1;
+//  R_mean = 42 => /64 | G_mean = 27 => /32 | B_mean = 33 => /64;
+    unsigned hls_r_c = 128;
+    unsigned hls_g_c = 128;
+    unsigned hls_b_c = 384;
     unsigned r_mean;
     unsigned g_mean;
     unsigned b_mean;
     unsigned r_var;
     unsigned g_var;
     unsigned b_var;
-    
-    /* TO DO: change manually and individually each const for RGB
-    and see if result changes in the .png*/
+
     hlsImgEnhance(HlsInImg, HlsOutImg, hls_c_c, hls_r_c, hls_g_c, hls_b_c,
                     r_mean, g_mean, b_mean, r_var, g_var, b_var);
     // Finally, convert the `Img` back to OpenCV `Mat`.
